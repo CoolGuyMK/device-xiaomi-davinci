@@ -223,3 +223,7 @@ SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sm8150/media
 
 # ANXCamera
 include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    system/lib/libcameraservice.so|libmedia_jni_shim.so
