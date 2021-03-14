@@ -33,6 +33,16 @@ TARGET_INCLUDE_WIFI_EXT := true
 
 PALLADIUM_BUILD_ZIP_TYPE := GAPPS
 
+#PALLADIUM-PROPS
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.palladiumdevice.maintainer=MRROBOTMK \
+    ro.palladiumdevice.cpu=SD730 \
+    ro.palladiumdevice.display=6.39 \
+    ro.palladiumdevice.displaytype=FULLHD+
+
+#GAPPS
+PALLADIUM_BUILD_VARIANT := GAPPS
+
 PRODUCT_NAME := palladium_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
