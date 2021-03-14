@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_davinci.mk
+    $(LOCAL_DIR)/palladium_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_davinci-user \
-    aosp_davinci-userdebug \
-    aosp_davinci-eng
+    palladium_davinci-user \
+    palladium_davinci-userdebug \
+    palladium_davinci-eng
