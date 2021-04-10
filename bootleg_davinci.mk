@@ -22,16 +22,14 @@ $(call inherit-product-if-exists, vendor/miuicamera/common/common-vendor.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Pixel Experience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_USES_BLUR := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_WIFI_EXT := true
+EXTRA_FOD_ANIMATIONS := true
 
-PRODUCT_NAME := aosp_davinci
+PRODUCT_NAME := bootleg_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
